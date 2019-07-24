@@ -78,7 +78,7 @@ dist: clean submodule ## builds source and wheel package
 	ls -l dist
 
 install: dist ## install the package to the active python3's site-packages
-	pip3 install dist/*.whl -U
+	pip3 install dist/*.whl --user --force
 
 submodule: ## build submodule
 	cd apriltags-source; cmake .
