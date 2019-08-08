@@ -7,6 +7,7 @@ PIP_BIN=$PYTHON_PATH/bin/pip
 
 cd /io/
 
+make clean
 $PIP_BIN install tox
 $PIP_BIN install -r requirements_dev.txt
 $PYTHON_BIN -m tox
